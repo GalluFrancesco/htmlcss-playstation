@@ -40,6 +40,11 @@ p{
     background-color: #CD3D0F;
 }
 
+.info button,
+.ps4 button{
+    background-color: #2D64E6;
+}
+
 .img-title{
     width: 55%;
 }
@@ -61,9 +66,6 @@ p{
 
 /* ----info ps5 + img---- */
 
-.info button{
-    background-color: #2D64E6;
-}
 
 .nascosto{
     display: none;
