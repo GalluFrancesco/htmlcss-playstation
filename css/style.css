@@ -49,6 +49,10 @@ p{
     width: 55%;
 }
 
+.nascosto{
+    display: none;
+}
+
 /* ----jumbotron---- */
 
 .jumbotron{
@@ -67,10 +71,6 @@ p{
 /* ----info ps5 + img---- */
 
 
-.nascosto{
-    display: none;
-}
-
 .opacizzato{
     filter: opacity(0.7);
 }
@@ -87,4 +87,10 @@ p{
 
 .bg-grey{
     background-color: #1F1F1F;
+}
+
+/* ----ps plus----*/
+
+.bg-lightgray{
+    background-color: #BEBCBB;
 }
