@@ -1,0 +1,15 @@
+/* ----jumbotron---- */
+
+.bg-img{
+    height: 100vh;
+    background: url("../img/jumbo-bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.altezza-col{
+    height: 100%;
+}
+
+.img-title{
+    width: 60%;
+}
