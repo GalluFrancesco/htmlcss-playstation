@@ -80,3 +80,9 @@ p{
     background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
     background-size: cover;
 }
+
+/* ----2° griglia img---- */
+
+.bg-grey{
+    background-color: #1F1F1F;
+}
