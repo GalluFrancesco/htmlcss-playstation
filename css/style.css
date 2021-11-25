@@ -1,3 +1,23 @@
+.container-custom{
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.txt-white{
+    color: white;
+}
+
+.btn-aspetto{
+    padding: 5px 15px;
+    border-radius: 25px;
+}
+
+.box-img-griglia,
+.box-img-griglia > img{
+    border-radius: 20px;
+}
+
 /* ----jumbotron---- */
 
 .bg-img{
@@ -6,10 +26,17 @@
     background-size: cover;
 }
 
-.altezza-col{
-    height: 100%;
-}
-
 .img-title{
     width: 60%;
+}
+
+.jumbotron button{
+    background-color: #CD3D0F;
+}
+
+/* prima griglia immagini */
+
+.brd-celeste{
+    border:#2D64E6 2px solid;
+    padding: 2px;
 }
