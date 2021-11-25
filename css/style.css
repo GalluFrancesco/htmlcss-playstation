@@ -8,9 +8,26 @@
     color: white;
 }
 
+.txt-darkgrey{
+    color: rgb(88, 88, 88);
+}
+
+.txt-grey{
+    color: grey;
+}
+
+.txt-celeste{
+    color: #2D64E6;
+}
+
 .btn-aspetto{
     padding: 5px 15px;
     border-radius: 25px;
+    border: none;
+}
+
+p{
+    margin: 0;
 }
 
 .box-img-griglia,
@@ -34,9 +51,23 @@
     background-color: #CD3D0F;
 }
 
-/* prima griglia immagini */
+/*----1° griglia img---- */
 
 .brd-celeste{
     border:#2D64E6 2px solid;
     padding: 2px;
+}
+
+/* ----info ps5 + img---- */
+
+.info button{
+    background-color: #2D64E6;
+}
+
+.nascosto{
+    display: none;
+}
+
+.opacizzato{
+    filter: opacity(0.7);
 }
