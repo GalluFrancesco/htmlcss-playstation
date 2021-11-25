@@ -35,20 +35,21 @@ p{
     border-radius: 20px;
 }
 
-/* ----jumbotron---- */
-
-.bg-img{
-    height: 100vh;
-    background: url("../img/jumbo-bg.png") no-repeat center;
-    background-size: cover;
+.jumbotron button,
+.banner button{
+    background-color: #CD3D0F;
 }
 
 .img-title{
-    width: 60%;
+    width: 55%;
 }
 
-.jumbotron button{
-    background-color: #CD3D0F;
+/* ----jumbotron---- */
+
+.jumbotron{
+    height: 100vh;
+    background: url("../img/jumbo-bg.png") no-repeat center;
+    background-size: cover;
 }
 
 /*----1° griglia img---- */
@@ -70,4 +71,12 @@ p{
 
 .opacizzato{
     filter: opacity(0.7);
+}
+
+/* ----banner---- */
+
+.banner{
+    height: 100vh;
+    background: url("../img/it-takes-two-hero-banner-desktop.jpg") no-repeat center;
+    background-size: cover;
 }
