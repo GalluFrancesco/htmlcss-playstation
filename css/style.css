@@ -100,3 +100,31 @@ p{
 .bg-darkblue{
     background-color: #161C3B;
 }
+
+/* ----footer---- */
+
+.bg-lightblue{
+    background-color: #00439C;
+}
+
+.box-sony{
+    width: 150px;
+}
+
+.globo > img{
+    width: 15px;
+}
+
+.globo{
+    padding-right: 0;
+}
+
+.box-sie{
+    width: 120px;
+}
+
+ul{
+    list-style: none;
+}
+
+
