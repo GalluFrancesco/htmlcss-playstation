@@ -1,6 +1,6 @@
 .container-custom{
     height: 100%;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -20,14 +20,20 @@
     color: #2D64E6;
 }
 
-.btn-aspetto{
-    padding: 5px 15px;
+button:not(.navbar-toggler){
+    height: 30px;
+    padding: 0 15px;
     border-radius: 25px;
-    border: none;
+    border: transparent 2px solid;
 }
 
 p{
     margin: 0;
+}
+
+.box-img-griglia{
+    padding: 2px;
+    border:transparent 2px solid;
 }
 
 .box-img-griglia,
@@ -37,11 +43,13 @@ p{
 
 .jumbotron button,
 .banner button{
+    box-shadow: 0 0 0 3px#CD3D0F;
     background-color: #CD3D0F;
 }
 
-.info button,
+.ps5-info button,
 .ps4 button{
+    box-shadow: 0 0 0 3px#2D64E6;
     background-color: #2D64E6;
 }
 
@@ -66,7 +74,7 @@ header{
 
 .box-sony-logo > img{
     height: 100%;
-    padding: 7px 12px;
+    padding: 7px 0;
 }
 
 /* ----nav---- */
@@ -77,25 +85,24 @@ header{
 
 nav{
     margin-top: 30px;
-    height: 70px;
 }
 
 .btn-dimensioni-nav{
     font-size: 0.7;
     padding: 0px 15px;
     margin-right: 12px;
-}
+    background-color: black;
+    box-shadow: 0 0 0 3px black;
+} 
 
-.box-freccia{
-    width: 10px;
-    height: 10px;
-    margin-left: 6px;
-    margin-right: 12px;
+#navbarDropdown{
+    color: black;
 }
 
 .cerca{
     width: 25px;
 }
+
 /* ----jumbotron---- */
 
 .jumbotron{
@@ -107,16 +114,22 @@ nav{
 
 /*----1° griglia img---- */
 
-.brd-celeste{
-    border:#2D64E6 2px solid;
-    padding: 2px;
+.griglia-games-1 .row .col-6:first-of-type .box-img-griglia,
+.griglia-games-1 .row .col-4:first-of-type .box-img-griglia,
+.griglia-games-1 .row .col-2:first-of-type .box-img-griglia{
+    border-color:#2D64E6;
 }
 
 /* ----info ps5 + img---- */
 
 
-.opacizzato{
+.ps5-info .col{
     filter: opacity(0.6);
+}
+
+.ps5-info .row .col:first-of-type{
+    filter: opacity(1);
+    border-bottom: #2D64E6  1px solid;
 }
 
 /* ----banner---- */
@@ -139,10 +152,20 @@ nav{
     background-color: #BEBCBB;
 }
 
+.ps-plus button{
+    background-color: #ebedf0;
+    box-shadow: 0 0 0 3px #ebedf0;
+}
+
 /* ----ps now---- */
 
 .bg-darkblue{
     background-color: #161C3B;
+}
+
+.ps-now button{
+    background-color: white;
+    box-shadow: 0 0 0 3px white;
 }
 
 /* ----footer---- */
@@ -171,8 +194,64 @@ nav{
     width: 120px;
 }
 
-ul{
-    list-style: none;
+/* hover + click */
+
+#navbarDropdown:hover{
+    color: #2D64E6;
 }
+
+/* transition button */
+
+button{
+    transition: all 0.5s
+}
+
+button:not(.navbar-toggler):hover{
+    border-color: white;
+}
+
+.ps-plus button:hover{
+    border-color: #2D64E6;
+}
+
+.ps-now button:hover{
+    border-color: black;
+}
+
+/* trasition ps5-info */
+
+.ps5-info .col{
+    transition: all 0.5s;
+}
+
+.ps5-info .col:hover{
+    filter: opacity(1);
+}
+
+/* animation griglia-games-1 */
+
+.griglia-games-1 .card-generica{
+    position: relative;
+}
+
+.griglia-games-1 .card-generica .box-img-griglia:hover{
+    position: absolute;
+    top: 0;
+    animation: moveTop 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveTop {
+    100% {
+        top: -20px;
+        animation-play-state: paused;
+    }
+}
+
+
+
+
+
+
 
 
