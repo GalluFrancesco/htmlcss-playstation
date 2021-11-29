@@ -125,19 +125,20 @@ nav{
 #cerca:focus {
     background-image:none;
     box-shadow: none;
-    width: 130px;
+    width: 125px;
     cursor: text;
     border: lightgray 1px solid
-}
-
-.dropdown-menu img{
-    height: 100%;
 }
 
 .dropdown-item{
     width: auto;
     margin: 0 24px;
 }
+
+.dropdown-menu img{
+    height: 100%;
+}
+
 
 /* ----jumbotron---- */
 
@@ -265,13 +266,26 @@ button:not(.navbar-toggler):hover{
 /* transition griglia-games-1 */
 
 
-.griglia-games-1 .card-generica .box-img-griglia{
+.griglia-games-1 .box-img-griglia{
     position: relative;
     top: 0px;
     transition: all 0.3s ease-in-out;
 }
 
-.griglia-games-1 .card-generica .box-img-griglia:hover{
+.griglia-games-1 .box-img-griglia:hover{
     top: -20px;
 }
 
+/* animation immagini nel dropdown */
+
+.dropdown-item img{
+    filter: opacity(0);
+    animation: imgGrowth 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes imgGrowth {
+    100% {
+        filter: opacity(1);
+    }
+}
