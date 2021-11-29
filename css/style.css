@@ -1,6 +1,7 @@
 .container-custom{
     height: 100%;
-    width: 90%;
+    width: 95%;
+    padding: 0 12px;
     margin: 0 auto;
 }
 
@@ -43,13 +44,13 @@ p{
 
 .jumbotron button,
 .banner button{
-    box-shadow: 0 0 0 3px#CD3D0F;
+    box-shadow: 0 0 0 1.5px#CD3D0F;
     background-color: #CD3D0F;
 }
 
 .ps5-info button,
 .ps4 button{
-    box-shadow: 0 0 0 3px#2D64E6;
+    box-shadow: 0 0 0 1.5px#2D64E6;
     background-color: #2D64E6;
 }
 
@@ -57,8 +58,8 @@ p{
     width: 55%;
 }
 
-.nascosto{
-    display: none;
+ul{
+    list-style: none;
 }
 
 /* ----header---- */
@@ -87,36 +88,69 @@ nav{
     margin-top: 30px;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu.show {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.dropdown-menu{
+    margin: 0;
+    border:none;
+    border-radius: 0;
+}
+
 .btn-dimensioni-nav{
     font-size: 0.7;
     padding: 0px 15px;
     margin-right: 12px;
     background-color: black;
-    box-shadow: 0 0 0 3px black;
+    box-shadow: 0 0 0 1.5px black;
 } 
 
 #navbarDropdown{
     color: black;
 }
 
-.cerca{
-    width: 25px;
+
+#cerca {
+    background: url('../img/lens.svg') no-repeat;
+    background-size:contain;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#cerca:focus {
+    background-image:none;
+    box-shadow: none;
+    width: 130px;
+    cursor: text;
+    border: lightgray 1px solid
+}
+
+.dropdown-menu img{
+    height: 100%;
+}
+
+.dropdown-item{
+    width: auto;
+    margin: 0 24px;
 }
 
 /* ----jumbotron---- */
 
 .jumbotron{
     margin-top: 100px;
-    height: 100vh;
+    height: calc(100vh - 100px);
     background: url("../img/jumbo-bg.png") no-repeat center;
     background-size: cover;
 }
 
-/*----1° griglia img---- */
+/*----prima griglia giochi---- */
 
-.griglia-games-1 .row .col-6:first-of-type .box-img-griglia,
-.griglia-games-1 .row .col-4:first-of-type .box-img-griglia,
-.griglia-games-1 .row .col-2:first-of-type .box-img-griglia{
+ .griglia-games-1 .elemento-selezionato{
     border-color:#2D64E6;
 }
 
@@ -127,7 +161,7 @@ nav{
     filter: opacity(0.6);
 }
 
-.ps5-info .row .col:first-of-type{
+.ps5-info .elemento-selezionato{
     filter: opacity(1);
     border-bottom: #2D64E6  1px solid;
 }
@@ -154,7 +188,7 @@ nav{
 
 .ps-plus button{
     background-color: #ebedf0;
-    box-shadow: 0 0 0 3px #ebedf0;
+    box-shadow: 0 0 0 1.5px #ebedf0;
 }
 
 /* ----ps now---- */
@@ -165,7 +199,7 @@ nav{
 
 .ps-now button{
     background-color: white;
-    box-shadow: 0 0 0 3px white;
+    box-shadow: 0 0 0 1.5px white;
 }
 
 /* ----footer---- */
@@ -228,30 +262,16 @@ button:not(.navbar-toggler):hover{
     filter: opacity(1);
 }
 
-/* animation griglia-games-1 */
+/* transition griglia-games-1 */
 
-.griglia-games-1 .card-generica{
+
+.griglia-games-1 .card-generica .box-img-griglia{
     position: relative;
+    top: 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .griglia-games-1 .card-generica .box-img-griglia:hover{
-    position: absolute;
-    top: 0;
-    animation: moveTop 0.2s linear;
-    animation-fill-mode: forwards;
+    top: -20px;
 }
-
-@keyframes moveTop {
-    100% {
-        top: -20px;
-        animation-play-state: paused;
-    }
-}
-
-
-
-
-
-
-
 
