@@ -139,7 +139,6 @@ nav{
     height: 100%;
 }
 
-
 /* ----jumbotron---- */
 
 .jumbotron{
@@ -231,9 +230,6 @@ nav{
 
 /* hover + click */
 
-#navbarDropdown:hover{
-    color: #2D64E6;
-}
 
 /* transition button */
 
@@ -252,6 +248,18 @@ button:not(.navbar-toggler):hover{
 .ps-now button:hover{
     border-color: black;
 }
+
+/* transition navbar */
+
+#navbarDropdown:hover{
+    color: #2D64E6;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover{
+    background-color: transparent;
+}
+
 
 /* trasition ps5-info */
 
@@ -276,7 +284,7 @@ button:not(.navbar-toggler):hover{
     top: -20px;
 }
 
-/* animation immagini nel dropdown */
+/* animation e transition custom nel dropdown */
 
 .dropdown-item img{
     filter: opacity(0);
@@ -288,4 +296,12 @@ button:not(.navbar-toggler):hover{
     100% {
         filter: opacity(1);
     }
+}
+
+.dropdown-item:hover img{
+    box-shadow: 2px 2px 4px #000000;
+}
+
+.dropdown-item b:hover{
+    color: #2D64E6;
 }
